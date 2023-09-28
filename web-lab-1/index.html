@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-Lab-1</title>
+    <link rel="stylesheet" href="css/web-lab-1.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+<div id = "header">
+        <p>Ефимов Арслан Альбертович P3232</p>
+        <p>Вариант - 1305</p>
+    </div>
+    <div id = main-selection>
+    <div id = "middle-zone">
+        <div id = "top-selection">
+            Enter the required data to check whether the point is within the presented area
+        </div>
+        <form action = "php/check-hit.php" method="get" id = "coordinates-form">
+        <div id = "left-selection">
+            <div id = "X-text">
+                <label for="X-text"></label>
+                <label for = "coordinate-x">Choose coordinate X: </label>
+                <div id = "select-x">
+                <select id = "coordinate-x" name = "X">
+                    <option value = "-2">X: -2</option>
+                    <option value = "-1.5">X: -1.5</option>
+                    <option value = "-1">X: -1</option>
+                    <option value = "-0.5">X: -0.5</option>
+                    <option value = "0">X: 0</option>
+                    <option value = "0.5">X: 0.5</option>
+                    <option value = "1">X: 1</option>
+                    <option value = "1.5">X: 1.5</option>
+                    <option value = "2">X: 2</option>
+                </select>
+                </div>
+            </div>
+            <div id = "coordinate-y">
+                <label for="Y-text"></label>
+                <input id = "Y-text" type = "text" name  = "Y" required placeholder = "Enter Y" maxlength="7"/>
+                <label for = "coordinate-y">Enter coordinate Y: </label>
+            </div>
+            <div id = "coordinate-r">
+                <label for = "R-text">Enter R: </label>
+                <input id = "R-text" type = "text" name = "R" placeholder = "Enter R"/>
+            </div>
+        </div>
+        <div id = "right-selection">
+            <div id = "image">
+                <img class = "image-graph" src="images/graph.png"/>
+            </div>
+            <div id = "button-container">
+                <div id = "sub-button">
+                    <button id = "submit-button" class = "button-result" type="submit"><span class = "button-result-text">Perform a check</span></button>
+                </div>
+                <div id = "clr-button">
+                    <button id = "clear-button" class = "button-clear" type="submit" onclick="return confirm('Вы уверены?');"><span class = "button-clear-text">Clear</span></button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<div id = "table-selection">
+    <table id = "table" class = "result-table">
+        <thead>
+        <tr class = "table-header">
+            <th scope = "col">X</th>
+            <th scope = "col">Y</th>
+            <th scope = "col">R</th>
+            <th scope = "col">Текущее время</th>
+            <th scope = "col">Время исполнения</th>
+            <th scope = "col">Результат</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+    <script type = "text/javascript" src="js/validate.js"></script>
+    <script type = "text/javascript" src="js/add-table.js"></script>
+</body>
+</html>

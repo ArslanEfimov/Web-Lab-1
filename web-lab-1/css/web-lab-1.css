@@ -1,0 +1,250 @@
+*{
+    font-family: monospace;
+}
+body{
+    background-image: url("https://w.forfun.com/fetch/ba/baca08a54e4f85736e59935a7bdd0cf2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p{
+    color: #ee8e8e;
+}
+label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    float: left;
+}
+select {
+    float: right;
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 0.65em;
+}
+input{
+    background-color: azure;
+    float: right;
+    text-align: center;
+    width: 26%; /* Установите желаемую ширину */
+
+}
+#main-selection{
+    opacity: 90%;
+    display: inline-block;
+}
+#table-selection{
+    opacity: 80%;
+    float: right;
+    display: block;
+    align-content: center;
+    width: 35%;
+    max-height: 400px; /* Установите желаемую максимальную высоту */
+    overflow-y: auto;
+
+}
+#header{
+    opacity: 80%;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    display: block;
+    vertical-align: top;
+    background-color: #000000;
+    width: 100%;
+    margin: auto;
+    box-shadow: -15px 0 10px 0 rgba(175, 12, 12, 0.75);
+    border-radius: 1em;
+}
+#middle-zone{
+    border-radius: 0.8em;
+    background-color: #ececec;
+    height: 50em;
+    width: 70em;
+    align-content: center;
+    margin: auto;
+    color: #ee8e8e;
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    border-style: groove;
+    border-color: #97ffc1;
+    position: relative;
+
+}
+#top-selection{
+    padding-top: 1.5em;
+    width: 90%;
+    background-color: #ececec;
+    color: #ee8e8e;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.6em;
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    border-style: groove;
+    border-color: rgb(56, 252, 252);
+    border-radius: 1em;
+
+}
+#left-selection{
+    margin-left: 1.5em;
+    display: inline-block;
+}
+#right-selection{
+    display: inline-block;
+    float: right;
+
+}
+#X-text{
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    border-style: groove;
+    background-color: #ececec;
+    border-color: #5fff54;
+    border-radius: 1.2em;
+    border-width: 0.3em;
+    display: inline-block;
+    width: 22em;
+    padding-top: 2.5em;
+    height: 5em;
+    margin-top: 4.5em;
+    margin-bottom: 6em;
+}
+#select-x{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+#coordinate-x{
+    display: inline-block;
+    width: 30%;
+    color: black;
+    margin: auto;
+    padding: 5px;
+}
+#coordinate-y{
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    border-style: groove;
+    background-color: #ececec;
+    border-color: #5fff54;
+    border-radius: 1.2em;
+    width: 22em;
+    height: 4.5em;
+    padding-top: 2.5em;
+    display: block;
+    margin-bottom: 6em;
+}
+#coordinate-r{
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    border-style: groove;
+    background-color: #ececec;
+    border-color: #5fff54;
+    border-radius: 1.2em;
+    width: 22em;
+    padding-top: 2.5em;
+    height: 4.5em;
+}
+#image{
+    display: block;
+    margin-top: 4em;
+    margin-right: 1.5em;
+    background-repeat: no-repeat;
+}
+#button-container{
+    display: block;
+    width: 26.5em;
+}
+#sub-button{
+    display: inline-block;
+}
+#clr-button{
+    display: inline-block;
+    float: right;
+}
+
+.button-result{
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    color: rgb(70, 70, 233);
+    border-color: rgb(70, 70, 233);
+    border-radius: 0.7em;
+    margin-top: 3em;
+    width: 14em;
+    height: 5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-result:hover{
+    background-color: rgb(70, 70, 233);
+    color: white;
+}
+.button-result:active{
+    opacity: 0.7;
+}
+.button-result-text{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.button-clear{
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
+    color: rgb(70, 70, 233);
+    border-color: rgb(70, 70, 233);
+    border-radius: 0.7em;
+    margin-top: 3em;
+    width: 13em;
+    height: 5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-clear:hover{
+    background-color: rgb(70, 70, 233);
+    color: white;
+}
+.button-clear:active{
+    opacity: 0.7;
+}
+
+.button-clear-text{
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+.image-graph{
+    height: 25em;
+    width: 25em;
+}
+.miss{
+    color: red;
+}
+.hit{
+    color: lightgreen;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-size: auto; /* Отключите фиксированный фон на мобильных устройствах */
+    }
+
+    #middle-zone {
+        width: 100%; /* Заполните всю доступную ширину на мобильных устройствах */
+    }
+
+    #table-selection {
+        float: none; /* Отключите плавающий элемент на мобильных устройствах */
+        width: 100%; /* Заполните всю доступную ширину на мобильных устройствах */
+        max-height: none; /* Отключите максимальную высоту на мобильных устройствах */
+        overflow-y: visible; /* Отключите вертикальную прокрутку на мобильных устройствах */
+        margin-top: 20px;
+    }
+
+    #right-selection {
+        float: none; /* Отключите плавающий элемент на мобильных устройствах */
+    }
+
+    #main-selection {
+        background-color: #ececec;
+        border-style: groove;
+        border-color: #97ffc1;
+        border-radius: 0.8em;
+    }
+}

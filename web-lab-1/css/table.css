@@ -1,0 +1,23 @@
+.result-table{
+    border: 1px solid black;
+    margin: 20px auto;
+    border-collapse: collapse;
+    max-height: 400px;
+    overflow-y: scroll;
+    box-shadow: -8px 0 8px 0 rgba(178, 49, 49, 0.68);
+}
+
+.table-header > th{
+    padding: 16px;
+    text-align: left;
+    background-color: black;
+    color: #f6f6f6;
+
+}
+#table-row > td{
+    overflow-y: auto;
+    border:  1px solid black;
+    background-color: black;
+    color: #f6f6f6;
+    text-align: center;
+}
